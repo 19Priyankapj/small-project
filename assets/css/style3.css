@@ -1,0 +1,444 @@
+/* PROJECT.CSS */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation{
+    /* position: sticky;
+    top: 0; */
+    background-color: #fff;
+}
+.navigation div nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 15px;
+  
+}
+.navigation div nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.navigation div nav ul li a{
+    text-decoration: none;
+    font-size: 23px;
+}
+.navigation div nav ul li a:hover{
+    color: darkorange;
+}
+nav h1{
+    color: #dc1cea;
+}
+nav h1:hover{
+    color: yellowgreen;
+}
+
+.container{
+    background: linear-gradient(to right,rgba(238, 7, 180, 0.675),rgba(9, 9, 238, 0.664)),url(../images/desktop.jpg) no-repeat center;
+    background-size: 100%;
+    width: 100%;
+    min-height: 290px;
+    display: flex;
+}
+
+.container >div{
+    flex: 1;
+}
+.container>div>img{
+    transform: translateX(150px);
+    padding-top: 50px;
+    min-width: 30%;
+    height: 70%;
+    margin-left: 150px;
+}
+
+.text{
+   justify-content: center;
+   /* text-align: center; */
+    flex: 1;
+    padding-left: -120px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.text>p{
+    width: 300px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text>h1{
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* .text>h1{
+    padding-top: 20px;
+} */
+
+.text>h1:hover{
+    color: rgb(16, 233, 114);
+}
+
+.text>p:hover{
+    color: black;
+}
+
+.text>button{
+    padding: 10px 50px 10px;
+    width: fit-content;
+    color: #fff;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+}
+.text>button:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+/* WELCOME TO NEW APP */
+
+.main-section{
+    background-color: black;
+    /* padding-bottom: 60px; */
+    min-height: 290px;
+}
+
+.page{
+    color: white;
+    padding: 3%;
+}
+.new-app{
+    display: flex;
+    padding: 3%;
+    align-items: center;
+} 
+.left-text>h2{
+    color: #dc1cea;
+
+}
+
+.left-text>h2:hover{
+    color: #fff;
+}  
+
+.right-section{
+    display: flex;
+    gap: 20px;
+
+}
+.right-section .app-card{
+    flex: 1;
+}
+.app-card img{
+    width: 100%;
+}
+.app-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.app-card-text{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    min-height: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff9d;
+}
+.app-card-text h3{
+    color: rgb(84, 84, 84);
+}
+.app-card-text h5{
+    color: rgb(0, 0, 0);
+}
+.blue-text{
+    color: #0841fb;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page h1{
+    position: relative;
+}
+.page h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.main-section .section1{
+    background-color: rgb(0, 199, 199);
+    min-height: 150px;
+    padding: 3%;
+    text-align: center;
+}
+
+.main-section .section1>button{
+    padding: 10px 20px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.main-section .section1>button:hover{
+    background-color: black;
+    color: #fff;
+    border: 2px solid #fff
+}
+.section1>p{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.screenshorts{
+    background-color: black;
+    padding: 5%;
+    
+    /* height: 450px; */
+}
+.screenshorts>h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.screenshorts>p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-screen{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.screenshort-card{
+    flex: 1;
+}
+.screenshort-card img{
+    width: 100%;
+}
+
+
+.pricing-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.pricing-card{
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+    position: relative;
+    min-height: 300px;
+    border-radius: 10px;
+   
+}
+.pricing-card ul{
+    list-style-type: none;
+}
+.pricing-card ul li{
+    margin-bottom: 20px;
+}
+.pricing-card h1{
+    font-size: 2.5rem;
+    color: rgb(5, 135, 135);
+}
+.register{
+    border: none;
+    padding: 15px;
+    width: fit-content;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: aqua;
+    border-radius: 100px;
+}
+.register:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+.pricing{
+    background-color: rgb(35, 21, 229);
+    min-height: 80vh;
+}
+
+.pricing>h1{
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+    padding-right: 30px;
+    font-family: cursive;
+}
+
+.subscribe-section{
+    /* background-color:aqua; */
+    min-height: 250px;
+    text-align: center;
+    background: linear-gradient(315deg, rgba(0, 255, 255, 0.781), rgba(101, 249, 249, 0.708)), url(https://images.pexels.com/photos/1451040/pexels-photo-1451040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center !important;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 25%;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.contact input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 70%;
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.contact input::placeholder{
+    color: #fff;
+}
+.contact button{
+    border: none;
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.subscribe-section>h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.subscribe-section>p{
+    color: #fff;
+    margin-top: 30px;
+}
+
+.subscribe>button:hover{
+    background-color: #fdfdfd;
+    color: red;
+}
+
+footer{
+    background-color: rgb(24, 29, 48); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    gap: 30px;
+    flex-wrap: wrap;
+
+   
+}
+
+@media(max-width:768px){
+    .navigation div nav {
+        flex-direction: column;
+    }
+    .container>div{
+        flex-direction: column;
+    }
+    .main-screen{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card-container{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .subscribe-section{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact input{
+        width: 100%;
+    }
+    .new-app{
+        flex-direction: column;
+    }
+    .right-section{
+        margin-top: 20px;
+    }
+    .container>img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text>h1>p{
+        text-align: center;
+        flex-direction: column;
+    }
+    .button{
+        align-items: center;
+    }
+}
+@media(max-width:568px){
+    .navigation{
+        height: fit-content;
+    }
+    .navigation div nav ul {
+        flex-direction: column;
+    }
+    .left-text{
+        text-align: center;
+    }
+    .container>img{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text>h1>p{
+        text-align: center;
+        flex-direction: column;
+    }
+    .button{
+        align-items: center;
+    }
+}
+@media(max-width:368px){
+   .right-section{
+    flex-direction: column;}
+}
+.container>img{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text>h1>p{
+    text-align: center;
+    flex-direction: column;
+}
+.button{
+    align-items: center;
+}

@@ -1,0 +1,118 @@
+:root{
+    --primary-color:#7bcb1a;
+    --white-color:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.primary-btn{
+    border: none;
+    padding: 15px;
+    color: #fff;
+    background-color: black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    min-width: 200px;
+}
+.heading{
+    font-size: 5rem;
+    z-index: 2;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #474444;
+    min-height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+.hero-text{
+    flex: 1;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+}
+.hero-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 20px;
+    position: relative;
+}
+.subtitle{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hero-image img{
+    width: 500px;
+    animation: animate-image 1s linear infinite alternate;
+    z-index: 1;
+}
+.blur1{
+    position: absolute;
+    min-width: 80%;
+    min-height: 80%;
+    border-radius: 300px;
+    background-color: var(--primary-color);
+    left: -100px;
+    top: 30px;
+    filter: blur(150px);
+    z-index: 2;
+}
+.blur2{
+    position: absolute;
+    min-width: 60%;
+    min-height: 60%;
+    border-radius: 300px;
+    /*background-color: var(--primary-color);*/
+    background: linear-gradient(45deg, rgba(18, 18, 193, 0.5), rgba(46, 20, 214, 0.5), var(--primary-color));
+    right: -100px;
+    top: 100px;
+    filter: blur(150px);
+    /* z-index: 2; */
+}
+@keyframes animate-image{
+    0%{
+        transform: translateX(10px) translateY(10px);
+    }
+    100%{
+        transform: translateX(-10px) translateY(-10px);
+
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: lightpink;
+    position: sticky;
+    top: 0;
+    color: blue;
+    backdrop-filter: blur(30px);
+    padding: 20px 10px;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li{
+    font-size: 1.3rem;
+    position: relative;
+}
+nav>button{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightcyan;
+    color: blue;
+}

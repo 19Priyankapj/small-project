@@ -1,0 +1,235 @@
+/*google*/
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+    /*flex*/
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 30px;
+    }
+  /*banner*/
+  .banner{
+    background: linear-gradient(rgba(3, 3, 73, 0.6), rgba(14, 14, 14, 0.918)), url(../images/gym2.jpg) no-repeat center;
+    background-size: 100%;
+    height: 97vh;
+  }
+  .banner>center{
+    color: #fff;
+    padding-top: 250px;
+  }
+  .banner>center>h1{
+    font-size: 40px;
+  }
+  .banner>center>button{
+    background-color: purple;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    transition: 1s ease-in-out;
+  }
+  .banner>center>button:hover{
+    background-color: black;
+    color: #fff;
+  }
+  /*ban3*/
+  .ban3{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 400px;
+    gap: 50px;
+    padding-top: 20px;
+    margin-top: 50px;
+    
+  }
+  .box>h1,p{
+    width: 320px;
+    margin-top: 20px;
+  
+
+  }
+  .ban3 .mini-box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:300 px;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    background-color: #fff;
+  }
+  
+  .box>button{
+    padding: 20px;
+    background-color: rgb(103, 89, 89) transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 50px;
+  }
+  /*boxes*/
+  .boxes{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 60px;
+    margin-left: 200PX;
+    padding-top: 30PX;
+    margin-top: 40px;
+  }
+
+  /*ban4*/
+  .ban4{
+        background: linear-gradient(rgba(10, 10, 10, 0.947), rgba(2, 2, 41, 0.81)), url(../images/gym4.jpg) no-repeat center;
+        background-size: 100%;
+        height: 58vh;
+        margin-top: 60px;
+      }
+      .ban4>center{
+        color: #fff;
+        padding-top: 50px;
+      }
+      .ban4>center>p{
+        color: yellow;
+      }
+      .container>div>input{
+        width: 100%;
+        padding: 10px spx;
+        margin: 5px;
+        border: 0px;
+        border-bottom: 3px solid #fff;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+      }
+      .ban4>.container{
+        text-align: center;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .button{
+        margin-left: 47%;
+        padding-top: 70px;
+      }
+      .button>button{
+        background-color: orange;
+        color: white;
+        padding: 20px;
+        border-radius: 50px;
+      }
+      .button>button:hover{
+        background-color: black;
+        color: beige;
+      }
+      /*ban5*/
+      .ban5{
+        background-color: #fff;
+        height: 90vh;
+        padding: 50px;
+      }
+      .ban5>.id1>h1{
+        color: blue;
+        font-size: 30px;
+        text-align: center;
+      }
+      .ban5>.id1>p{
+        color: grey;
+      }
+      .ban5>.id1>h1,.ban5>.id1>p{
+        line-height: 1;
+      }
+      .icon>.item{
+        flex: 1;
+      }
+      .icon{
+        padding-top: 30px;
+        padding-left: 50px;  
+      }
+      .icon>.item>div{
+        box-shadow: rgb(43, 40, 40,0.24) 0px 3px 8px;
+        margin: 60px auto;
+        padding: 50px;
+        transition: 0.5s ease-in-out;
+      }
+      .icons>.item>div>section>h4{
+        color: gray;
+      }
+      .icons>.item>div>section>h2{
+        color: lavender;
+      }
+      .icons>.item>div>section>p{
+        color: bisque;
+      }
+      .icon>.item>div>section>h4,.icon>.item>div>section>h2,.icon>.item>div>section>p{line-height: 1;}
+      .icon>.item>div:hover{background-color: lawngreen;color: darkmagenta;cursor: pointer;}
+
+      /*ban6*/
+
+      .ban6{background: linear-gradient(rgba(87, 87, 189,0.6),rgba(94, 94, 199,0.7)),url(../images/gym.jpg) no-repeat center;
+        background-size: 100%;
+        height: 65vh;
+        padding: 60px;
+    }
+    .ban6>.id2{padding-top: 10px;}
+    .ban6>.id2>h1{color: white; font-size: 30px;}
+    .ban6>.id2>p{color: gray;}
+    .ban6>.id2>h1,.ban6>.id2>p{line-height: 1;}
+    .ban6>.container>div{flex: 1;}
+    .Section{padding-top: 40px; padding-left: 10%;color: white; }
+    .Section>.item1>div{box-shadow: rgb(60, 51, 51,0.24) 0px 3px 8px;
+       height: 320px;
+       width: 300px;
+        transition: 0.5 ease-in-out;
+        border: 2px solid #fff;
+       text-align: center;
+    }
+    .Section>.item1>div>section>h3{background-color: black;  border-radius: 30%; height: 40px; width: 60px; transform: translateX(122px);}
+    .Section>.item1>div>section>h2,.Section>.item1>div>section>h3,.Section>.item1>div>section>p{line-height: 2;text-align: center;}
+
+    /*ban7*/
+    .ban7>center>b>i{
+      width: 300px;
+      padding-top: 10px;
+      
+    }
+
+  .ban7{background: #fff;height: 35vh;padding-top: 70px;}
+  .fa-quote-left{font-size: 50px;}
+  .card>div{text-align: center;padding-top: 40px;}
+  .card>div>h3{font-size: 20px; color:blue ;}
+  .card>div>p{color:gray;}
+
+  /*ban8*/
+.container5{background-color: rgb(24, 29, 48);
+height: 35vh;
+padding-left: 20%;}
+.container5>div>h1{color: #fff; font-size: 30px; padding-top: 50px;}
+.container5>div>p{color: #fff; padding-bottom: 5px;}
+.container5>div>h5{color: #fff;}
+.item1>h1>b>i{color: #fff;} 
+
+
+/*footer*/
+footer{
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(41, 41, 64);
+  color: #fff;
+  display: flex;
+  flex: 1;
+  flex: 1;
+  padding: 30px;
+  
+}
+
+
+
+
+
+
+
+
+    
+  
+  
